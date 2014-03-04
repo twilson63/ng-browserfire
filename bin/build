@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+// browserify app into bundle.js
+var browserify = require('browserify');
+var b = browserify();
+b.add(__dirname + '/../app/app.js');
+b.transform(require('brfs'));
+b.bundle().pipe(fs.createWriteStream(__dirname + '/../public/bundle.js'));
+

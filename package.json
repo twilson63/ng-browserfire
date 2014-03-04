@@ -1,0 +1,24 @@
+{
+  "name": "fieldlinc-web",
+  "version": "0.0.0",
+  "scripts": {
+    "install": "napa",
+    "build": "./bin/build & cp -rf ./node_modules/bootstrap/dist/css/bootstrap.css public/css/bootstrap.css & cp -rf ./node_modules/bootstrap/dist/fonts/* public/fonts ",
+    "start": "cd public && w3"
+  },
+  "devDependencies": {
+    "napa": "~0.4.0",
+    "brfs": "~1.0.0",
+    "browserify": "~3.31.2",
+    "less": "~1.7.0",
+    "w3": "~0.2.0"
+  },
+  "napa": {
+    "bootstrap": "twbs/bootstrap",
+    "angular": "angular/bower-angular",
+    "router": "angular-ui/ui-router",
+    "firebase": "firebase/firebase-bower",
+    "simple-login": "firebase/firebase-simple-login",
+    "angularfire": "firebase/angularFire"
+  }
+}
